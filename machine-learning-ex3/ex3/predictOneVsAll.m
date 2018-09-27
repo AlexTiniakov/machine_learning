@@ -30,12 +30,9 @@ X = [ones(m, 1) X];
 %       for each row.
 %       
 
-
-
-
-
-
-
+A = arrayfun(@(x) sigmoid(x), X * all_theta');
+[max_values p] = max(A');
+p';
 % =========================================================================
 
 
